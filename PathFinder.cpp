@@ -129,7 +129,7 @@ vector<string> shortpath(vector<string> str){
         }
 
         for (auto & i : str) {
-            if (i.size() == min.size()) ret.push_back(min);
+            if (i.size() == min.size()) ret.push_back(i);
         }
     }
     return ret;
@@ -145,7 +145,7 @@ vector<string> longpath(vector<string> str){
         }
 
         for (auto & i : str) {
-            if (i.size() == max.size()) ret.push_back(max);
+            if (i.size() == max.size()) ret.push_back(i);
         }
 
     }
